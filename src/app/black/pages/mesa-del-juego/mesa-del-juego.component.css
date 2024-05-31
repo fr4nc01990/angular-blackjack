@@ -1,0 +1,16 @@
+.divcartas{
+    display: flex;
+}
+
+
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color:#f3e1e1e6;
+}
+      
+
+

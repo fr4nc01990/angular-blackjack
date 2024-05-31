@@ -1,0 +1,16 @@
+<ng-container *ngFor="let jugador of jugadores">
+    <div class="titulo-jugadores">
+      
+      <h4 class="bebas-neue-regular">
+        
+        {{jugador.nombre}} -
+        <small class="jugador-puntaje">{{jugador.puntaje}}</small>
+      </h4>
+      <div>
+        <app-carta *ngFor="let carta of (jugador.id === 1 ? gameService.cartasJugador1 : gameService.cartasJugador2)"
+                   [cartaSon]="carta"></app-carta>
+      </div>
+    </div>
+  </ng-container>
+  
+  
